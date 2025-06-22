@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Inkoratee</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <header>
+  <div class="logo-nav">
+    <img src="inkoratee.jpg" alt="Inkoratee Logo" class="logo" />
+    
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="product.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </div>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="product.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<section class="content">
+  <h2>Contact Us</h2>
+  <p>Let’s connect — whether it’s a question, idea, or a cool collab.</p>
+
+  <form action="https://formspree.io/f/xvgrbeop" method="POST" class="contact-form">
+    <label for="name">Your Name</label>
+    <input type="text" name="name" id="name" required placeholder="Enter your name" />
+
+    <label for="email">Your Email</label>
+    <input type="email" name="email" id="email" required placeholder="Enter your email" />
+
+    <label for="phone">Mobile Number</label>
+    <input type="tel" name="phone" id="phone" required placeholder="+91-9876543210" pattern="[0-9+ -]{10,15}" />
+
+    <label for="message">Your Message</label>
+    <textarea name="message" id="message" rows="6" required placeholder="Write your message..."></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h2>InkoraTee</h2>
+      <p>Sindhu Mavli,<br> Udaipur, Rajasthan, India, 313204</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/inkoratee?igsh=MWkwdXZyc2twZ2pidw==" target="_blank">
+          <img src="instagram.png" alt="Instagram" width="30" height="30">
+        </a>
+        <a href="https://x.com/InkoraTee?t=tDQ2P_ETbcGQ1y2Skiw1FQ&s=09" target="_blank">
+          <img src="twitter.png" alt="Twitter" width="30" height="30">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 InkoraTee. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
