@@ -69,3 +69,23 @@ function searchProduct() {
     }
   }
 }
+
+
+// Query string se product & price nikalna
+const urlParams = new URLSearchParams(window.location.search);
+const product = urlParams.get("product");
+const price = urlParams.get("price");
+
+// Product info ko show karna
+if (document.getElementById("productInfo")) {
+  document.getElementById("productInfo").innerText = `🛍️ ${product} - ${price}`;
+}
+
+// Hidden input me product set karna
+if (document.getElementById("qrProduct")) {
+  document.getElementById("qrProduct").value = `${product} - ${price}`;
+}
+if (document.getElementById("codProduct")) {
+  document.getElementById("codProduct").value = `${product} - ${price}`;
+}
+
